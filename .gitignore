@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.matplotlib/
+__marimo__/
+outputs/models/
+.DS_Store
+*.zip
+m5-forecasting-accuracy/*.csv
+outputs/productes/*.sqlite
+outputs/productes/*.sqlite.restoring
+outputs/productes/validacio_blocs.csv
+outputs/productes/importancia_variables.csv
+outputs/productes/prediccions_test.csv
+.publish/

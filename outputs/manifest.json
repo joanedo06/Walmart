@@ -1,0 +1,98 @@
+{
+  "store": "CA_2",
+  "horizon": 28,
+  "folds": 12,
+  "seed": 42,
+  "feature_lags": [
+    28,
+    35,
+    42,
+    49,
+    56,
+    364,
+    371
+  ],
+  "supervised_warmup": 371,
+  "selection": {
+    "criterion": "minimum_mean_validation_mae",
+    "winner": {
+      "name": "boosting_leaves7",
+      "family": "boosting",
+      "parameter": 7
+    },
+    "candidates": [
+      {
+        "name": "setmana_anterior",
+        "family": "baseline",
+        "parameter": 0
+      },
+      {
+        "name": "mitjana_4_setmanes",
+        "family": "baseline",
+        "parameter": 0
+      },
+      {
+        "name": "ridge_1",
+        "family": "ridge",
+        "parameter": 1
+      },
+      {
+        "name": "ridge_10",
+        "family": "ridge",
+        "parameter": 10
+      },
+      {
+        "name": "ridge_100",
+        "family": "ridge",
+        "parameter": 100
+      },
+      {
+        "name": "random_forest_leaf3",
+        "family": "random_forest",
+        "parameter": 3
+      },
+      {
+        "name": "random_forest_leaf10",
+        "family": "random_forest",
+        "parameter": 10
+      },
+      {
+        "name": "boosting_leaves7",
+        "family": "boosting",
+        "parameter": 7
+      },
+      {
+        "name": "boosting_leaves15",
+        "family": "boosting",
+        "parameter": 15
+      }
+    ]
+  },
+  "quality": {
+    "store": "CA_2",
+    "products": 3049,
+    "validation_days": 1913,
+    "observed_days": 1941,
+    "first_date": "2011-01-29",
+    "validation_end": "2016-04-24",
+    "observed_end": "2016-05-22",
+    "zero_total_days": 0,
+    "matching_product_histories": true,
+    "consecutive_days": true,
+    "missing_sales_cells": 0
+  },
+  "python": "3.12.4",
+  "versions": {
+    "numpy": "2.5.3",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "marimo": "0.24.2",
+    "scipy": "1.18.1",
+    "joblib": "1.6.0"
+  },
+  "input_sha256": {
+    "sales_train_validation.csv": "a4ad89c7024a24db13cbaf160c7cca2c5869fbf3e5760019762cf81405a85594",
+    "sales_train_evaluation.csv": "54c062b7fa91179a3501aba8e7e8ffb7baeb42eb2968612d73df348f24add3d4",
+    "calendar.csv": "d12b5914ef03e66649adf5dd9e996e6602251c22b7a6af8f1f7e3aa12f8860f5"
+  }
+}

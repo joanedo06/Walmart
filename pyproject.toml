@@ -1,0 +1,14 @@
+[project]
+name = "walmart-ca2"
+version = "0.1.0"
+description = "Predicció de vendes diàries de Walmart CA_2 amb validació temporal"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.0,<3",
+    "scikit-learn>=1.5,<2",
+    "matplotlib>=3.9,<4",
+    "marimo>=0.24,<1",
+]
+
+[tool.uv]
+package = false
